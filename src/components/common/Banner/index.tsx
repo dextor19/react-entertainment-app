@@ -19,8 +19,9 @@ const Banner: FC <BannerProps> = ({url}) => {
             params: { api_key: process.env.REACT_APP_API_KEY }
           });
         //Give to our movie hook one of all the movies randomly
-        setPopularMovie(request.data.results[0]);
-        return request;
+        if( Array.isArray(request.data.results) && request.data.results.length > 0){
+          setPopularMovie(request.data.results[0]);
+        }
     }
     fetchData();
     

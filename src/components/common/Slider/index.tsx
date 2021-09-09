@@ -23,7 +23,9 @@ const Slider: FC<SliderProps> = ({isLargeRow, title, url}) => {
         {
           params: { api_key: process.env.REACT_APP_API_KEY }
         });
-      setTrendingMovie(res.data.results)
+      if(Array.isArray(res.data.results) && res.data.results.length > 0) {
+        setTrendingMovie(res.data.results)
+      }
     }
     fetchData();
   }, [url]);
