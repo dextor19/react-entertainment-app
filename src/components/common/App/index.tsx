@@ -13,7 +13,7 @@ const App = () => {
       <Banner url={requests.discoverMovie} />
       <Slider
         title="Entertainment Movie Originals"
-        url={requests.netflixOriginals}
+        url={requests.originals}
         isLargeRow 
       />
       <Slider
