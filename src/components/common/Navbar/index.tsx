@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.nav} ${ show && styles.nav__black}`}>
       <img
-                alt="Netflix logo"
+                alt="Entertainment Movie logo"
                 src={logo}
                 className={styles.nav__logo}
             />

@@ -1,6 +1,6 @@
 const requests = {
     discoverMovie: `/discover/movie?sort_by=popularity.desc`,
-    netflixOriginals: `/discover/tv?with_networks=213`,
+    originals: `/discover/tv?with_networks=213`,
     trending: `/trending/all/week?language=en-US`,
     topRated: `/movie/top_rated?language=en-US`,
     actionMovies: `/discover/movie?with_genres=28`,
